@@ -1,0 +1,176 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('media/img.jpg') no-repeat center center fixed; /* Correct path */
+    background-size: cover;
+}
+
+/* Calculator Container */
+.calculator {
+    border: 2px solid #cd05c0; /* Dark blue border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #e9c5d7; /* Light pink background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+/* Theme Switcher Styling */
+.theme-switcher {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.theme-switcher button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dda0dd; /* Light purple fill */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-switcher button:hover {
+    background-color: #ba55d3; /* Slightly darker purple on hover */
+}
+
+/* History Section Styling */
+.history {
+    margin-bottom: 10px;
+}
+
+.history h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+/* History Buttons Styling */
+.history-buttons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.history-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dda0dd; /* Light purple fill */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.history-buttons button:hover {
+    background-color: #ba55d3; /* Slightly darker purple on hover */
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff0f5; /* Light pink history background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.history li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Display Styling */
+.display input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Buttons Grid Styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.buttons button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .calculator {
+    background-color: #444; /* Darker background for calculator */
+    border-color: #555;
+}
+
+.dark-mode .display input {
+    background-color: #555;
+    color: #fff;
+    border-color: #666;
+}
+
+.dark-mode .buttons button {
+    background-color: #666;
+    color: #fff;
+    border-color: #777;
+}
+
+.dark-mode .buttons button:hover {
+    background-color: #777;
+}
+
+.dark-mode .history ul {
+    background-color: #555;
+    border-color: #666;
+}
+
+.dark-mode .history li {
+    border-bottom: 1px solid #666;
+}
+
+.dark-mode .history-buttons button {
+    background-color: #a020f0; /* Dark purple for buttons in dark mode */
+}
+
+.dark-mode .history-buttons button:hover {
+    background-color: #9400d3; /* Slightly darker purple on hover */
+}
+
+.dark-mode .theme-switcher button {
+    background-color: #a020f0; /* Dark purple for buttons in dark mode */
+}
+
+.dark-mode .theme-switcher button:hover {
+    background-color: #9400d3; /* Slightly darker purple on hover */
+}
